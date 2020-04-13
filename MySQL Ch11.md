@@ -8,6 +8,8 @@ Difference between "scalability", "high availability", "capacity" and "performan
 
 "Scalability" -> the ability to add capacity by adding resources
 
+"High availability" -> next chapter
+
 Analogy with cars:
 
 "Performance" -> how fast the car is
@@ -35,7 +37,13 @@ Replication, partitioning, and sharding
 The simplest and most common way to scale out is to distribute your data across several servers with **replication**
 Then use the replicas for read queries.
 
+## Load Balancing
 
+Basic idea: to share the workload among a collection of servers.
+
+Usual way: place a load balancer in front of the servers. It then routes incoming connections to the least busy available server.
+
+Five common goals: scalability, efficiency, availablity, consistency
 
 
 
